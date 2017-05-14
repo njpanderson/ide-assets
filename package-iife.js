@@ -22,7 +22,7 @@ function upload(options, git_data) {
 
 		console.log(chalk.green('Uploading ' + files.length + ' packages to ' + options.host + '...'));
 
-		path = options.path + '/' + git_data.branch + '/' + git_data.tag;
+		path = options.path + '/' + options.package_name + '/' + git_data.branch + '/' + git_data.tag;
 		dest = (options.user ? options.user + '@' : '') +
 			options.host + ':' + path;
 
