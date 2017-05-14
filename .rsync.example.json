@@ -1,5 +1,6 @@
 {
-	"host": "",
-	"user": "",
-	"path": ""
+	"host": "<rsync_hostname>",
+	"user": "<ssh_user_with_write_access_to_path>",
+	"path": "<base_path_to_file_area>",
+	"package_name": "<your_package_name>"
 }
