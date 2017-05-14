@@ -25,8 +25,7 @@ function upload(options, git_data) {
 		path = options.path + '/' + git_data.branch + '/' + git_data.tag;
 		dest = (options.user ? options.user + '@' : '') +
 			options.host + ':' + path;
-		console.log(dest, files);
-		process.exit();
+
 		rsync
 			.flags('z')
 			.set('rsync-path', 'mkdir -p ' + path + ' && rsync')
