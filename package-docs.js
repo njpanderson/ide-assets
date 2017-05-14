@@ -3,6 +3,7 @@ const chalk = require('chalk'),
 	fs = require('fs'),
 	path = require('path'),
 	Rsync = require('rsync'),
+	rimraf = require('rimraf'),
 	init = require('./lib/init-packaging'),
 	docs_path = path.resolve('docs');
 
@@ -35,6 +36,16 @@ function upload(options, git_data) {
 			if (error) {
 				console.error('Rsync error: ' + error.message + ' ' + cmd);
 				process.exit(code);
+			} else {
+				console.log(chalk.green('Tidying up...'));
+				rimraf(path, {
+					glob: false
+				}, (error) => {
+					if (error) {
+						console.error(error.message);
+						process.exit(error.code);
+					}
+				});
 			}
 		});
 	} else {
