@@ -2,7 +2,7 @@ const chalk = require('chalk'),
 	glob = require('glob'),
 	Rsync = require('rsync'),
 	init = require('./lib/init-packaging'),
-	package_files = 'dist/*.iife.js';
+	package_files = 'dist/*.iife*.*';
 
 init('./.rsync.json', upload);
 
