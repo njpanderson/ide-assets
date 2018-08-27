@@ -1,5 +1,5 @@
 module.exports = {
-	'extends': ['eslint:recommended', 'plugin:react/recommended'],
+	'extends': ['eslint:recommended'],
 	'parserOptions': {
 		'ecmaFeatures': {
 			'jsx': true,
@@ -7,15 +7,11 @@ module.exports = {
 		},
 		'sourceType': 'module'
 	},
-	'plugins': [
-		'react'
-	],
 	'env': {
 		'browser': true,
 		'node': true,
 		'mocha': true,
-		'es6': true,
-		'jquery': true
+		'es6': true
 	},
 	'rules': {
 		// enable additional rules
