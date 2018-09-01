@@ -6,7 +6,7 @@
 	},
 	"opts": {
 		"destination": "./docs",
-		"template": "./.ide/node_modules/ink-docstrap/template",
+		"template": ".ide/node_modules/ink-docstrap/template",
 		"package": "./package.json",
 		"readme": "./API-README.md",
 		"recurse": true
