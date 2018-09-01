@@ -4,5 +4,8 @@
     "glob": "^7.1.1",
     "rimraf": "^2.6.1",
     "rsync": "^0.6.1"
+  },
+  "devDependencies": {
+    "bookshelf-jsdoc-theme": "^0.2.0"
   }
 }

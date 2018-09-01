@@ -4,6 +4,7 @@
 		"include": ["src/"],
 		"includePattern": ".+\\.jsx?$"
 	},
+	"template": "node_modules/minami",
 	"opts": {
 		"destination": "./docs",
 		"package": "./package.json",
