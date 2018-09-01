@@ -2,10 +2,9 @@
   "dependencies": {
     "chalk": "^1.1.3",
     "glob": "^7.1.1",
+    "ink-docstrap": "^1.3.2",
     "rimraf": "^2.6.1",
     "rsync": "^0.6.1"
   },
-  "devDependencies": {
-    "bookshelf-jsdoc-theme": "^0.2.0"
-  }
+  "devDependencies": {}
 }
