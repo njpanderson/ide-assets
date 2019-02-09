@@ -19,6 +19,9 @@ module.exports = {
 		'linebreak-style': ['error', 'unix'],
 		'quotes': ['error', 'single'],
 		'semi': ['error', 'always'],
+		'prefer-const': ['error'],
+		'no-var': ['error'],
+		'no-extra-parens': ['warn'],
 
 		// override default options for rules from base configurations
 		//'comma-dangle': ['error', 'always'],
@@ -29,7 +32,10 @@ module.exports = {
 
 		// react specific rules
 		'react/no-danger': 'off',
-		'react/display-name': 'off'
+		'react/display-name': 'off',
+
+		// best practices
+		'curly': ["error"]
 	},
 	globals: {
 		'PRODUCTION': true
