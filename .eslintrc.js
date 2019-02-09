@@ -35,7 +35,7 @@ module.exports = {
 		'react/display-name': 'off',
 
 		// best practices
-		'curly': ["error"]
+		'curly': ['error']
 	},
 	globals: {
 		'PRODUCTION': true
