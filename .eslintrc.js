@@ -21,7 +21,6 @@ module.exports = {
 		'semi': ['error', 'always'],
 		'prefer-const': ['error'],
 		'no-var': ['error'],
-		'no-extra-parens': ['warn'],
 
 		// override default options for rules from base configurations
 		//'comma-dangle': ['error', 'always'],
